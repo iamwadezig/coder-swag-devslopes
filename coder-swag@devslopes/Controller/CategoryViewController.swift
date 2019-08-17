@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CategoryViewController.swift
 //  coder-swag@devslopes
 //
 //  Created by Ario Nugroho on 17/08/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
