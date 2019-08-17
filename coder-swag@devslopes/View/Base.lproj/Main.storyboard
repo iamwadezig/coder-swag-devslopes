@@ -10,21 +10,81 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--C O D E R   S W A G-->
+        <!--CODER   SWAG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CategoryViewController" customModule="coder_swag_devslopes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-o4-yKb">
+                                <rect key="frame" x="16" y="27" width="165" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="7dS-Ul-p91"/>
+                                    <constraint firstAttribute="height" constant="24" id="VMB-QY-hr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zD1-FK-jsj">
+                                <rect key="frame" x="0.0" y="66" width="375" height="658"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="157" id="WFd-48-yJ4" customClass="CategoryCell" customModule="coder_swag_devslopes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="157"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WFd-48-yJ4" id="2BU-Mu-ZUC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="6z8-wh-tIx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="156.66666666666666"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-Zl-oLK">
+                                                    <rect key="frame" x="151" y="68.333333333333329" width="73" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6z8-wh-tIx" secondAttribute="bottom" id="9XC-WS-eID"/>
+                                                <constraint firstAttribute="trailing" secondItem="6z8-wh-tIx" secondAttribute="trailing" id="CbK-af-utv"/>
+                                                <constraint firstItem="RmC-Zl-oLK" firstAttribute="centerY" secondItem="2BU-Mu-ZUC" secondAttribute="centerY" id="ECW-bj-wQ1"/>
+                                                <constraint firstItem="RmC-Zl-oLK" firstAttribute="centerX" secondItem="2BU-Mu-ZUC" secondAttribute="centerX" id="Hbz-NW-EcG"/>
+                                                <constraint firstItem="6z8-wh-tIx" firstAttribute="top" secondItem="2BU-Mu-ZUC" secondAttribute="top" id="Wg0-zb-GdB"/>
+                                                <constraint firstItem="6z8-wh-tIx" firstAttribute="leading" secondItem="2BU-Mu-ZUC" secondAttribute="leading" id="oSD-YQ-HEl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="6z8-wh-tIx" id="8jO-wo-UaD"/>
+                                            <outlet property="categoryTitle" destination="RmC-Zl-oLK" id="g6R-Is-MWH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zD1-FK-jsj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QjP-eR-ips"/>
+                            <constraint firstItem="zD1-FK-jsj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YXj-84-y89"/>
+                            <constraint firstItem="zRn-o4-yKb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="fqP-gy-S5i"/>
+                            <constraint firstItem="zD1-FK-jsj" firstAttribute="top" secondItem="zRn-o4-yKb" secondAttribute="bottom" constant="15" id="rho-LJ-KCB"/>
+                            <constraint firstItem="zRn-o4-yKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rky-q5-RTw"/>
+                            <constraint firstAttribute="bottom" secondItem="zD1-FK-jsj" secondAttribute="bottom" id="zob-Ya-nPi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="C O D E R   S W A G" id="lpd-vV-yrZ"/>
+                    <navigationItem key="navigationItem" title="CODER   SWAG" id="lpd-vV-yrZ"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="zD1-FK-jsj" id="iYa-7j-eEa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1047.2" y="137.4384236453202"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7YT-TM-eWv">
@@ -49,4 +109,7 @@
             <point key="canvasLocation" x="258" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shirts" width="1024" height="703"/>
+    </resources>
 </document>

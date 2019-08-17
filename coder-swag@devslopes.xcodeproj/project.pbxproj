@@ -12,6 +12,9 @@
 		05F0902423080218004F9B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F0902223080218004F9B12 /* Main.storyboard */; };
 		05F0902623080219004F9B12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F0902523080219004F9B12 /* Assets.xcassets */; };
 		05F0902923080219004F9B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F0902723080219004F9B12 /* LaunchScreen.storyboard */; };
+		05F09034230824B2004F9B12 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F09033230824B2004F9B12 /* CategoryCell.swift */; };
+		05F090362308286C004F9B12 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F090352308286C004F9B12 /* Category.swift */; };
+		05F090392308352F004F9B12 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F090382308352F004F9B12 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		05F0902523080219004F9B12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F0902823080219004F9B12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F0902A23080219004F9B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F09033230824B2004F9B12 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		05F090352308286C004F9B12 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		05F090382308352F004F9B12 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		05F0901D23080218004F9B12 /* coder-swag@devslopes */ = {
 			isa = PBXGroup;
 			children = (
+				05F0903723083513004F9B12 /* Services */,
 				05F090322308026B004F9B12 /* Model */,
 				05F0903123080265004F9B12 /* View */,
 				05F0903023080254004F9B12 /* Controller */,
@@ -77,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				05F0902223080218004F9B12 /* Main.storyboard */,
+				05F09033230824B2004F9B12 /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -84,8 +92,17 @@
 		05F090322308026B004F9B12 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				05F090352308286C004F9B12 /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		05F0903723083513004F9B12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05F090382308352F004F9B12 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +178,9 @@
 			files = (
 				05F0902123080218004F9B12 /* CategoryViewController.swift in Sources */,
 				05F0901F23080218004F9B12 /* AppDelegate.swift in Sources */,
+				05F09034230824B2004F9B12 /* CategoryCell.swift in Sources */,
+				05F090362308286C004F9B12 /* Category.swift in Sources */,
+				05F090392308352F004F9B12 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
