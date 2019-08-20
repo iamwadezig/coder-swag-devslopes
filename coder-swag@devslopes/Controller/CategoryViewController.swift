@@ -18,6 +18,7 @@ class CategoryViewController: UIViewController {
         
         categoryTable.delegate = self
         categoryTable.dataSource = self
+//        categoryTable.rowHeight = 175.0
         
     }
 
@@ -59,6 +60,12 @@ extension CategoryViewController : UITableViewDataSource {
             
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+        return 175
+
     }
     
 }
