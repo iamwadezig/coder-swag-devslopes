@@ -17,6 +17,7 @@
 		05F090392308352F004F9B12 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F090382308352F004F9B12 /* DataService.swift */; };
 		05F0903B230BB469004F9B12 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0903A230BB469004F9B12 /* ProductCell.swift */; };
 		05F0903D230BB6D2004F9B12 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0903C230BB6D2004F9B12 /* Product.swift */; };
+		05F09041230BEE45004F9B12 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F09040230BEE45004F9B12 /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		05F090382308352F004F9B12 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		05F0903A230BB469004F9B12 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		05F0903C230BB6D2004F9B12 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		05F09040230BEE45004F9B12 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				05F0902023080218004F9B12 /* CategoryViewController.swift */,
+				05F09040230BEE45004F9B12 /* ProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				05F0903B230BB469004F9B12 /* ProductCell.swift in Sources */,
 				05F090362308286C004F9B12 /* Category.swift in Sources */,
 				05F090392308352F004F9B12 /* DataService.swift in Sources */,
+				05F09041230BEE45004F9B12 /* ProductViewController.swift in Sources */,
 				05F0903D230BB6D2004F9B12 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

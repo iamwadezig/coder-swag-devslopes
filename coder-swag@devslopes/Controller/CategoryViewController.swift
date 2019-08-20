@@ -30,7 +30,25 @@ class CategoryViewController: UIViewController {
 
 extension CategoryViewController : UITableViewDelegate {
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //it will perform segue if we select avery category on indexpath
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "productSegue", sender: category)
+        
+    }
+    //prepare for segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //pass in data from this vc to next vc
+        if let productsVC = segue.destination as? ProductViewController {
+            //setting no title backbutton on productviewcontroller
+            let backButton = UIBarButtonItem()
+            backButton.title = ""
+            navigationItem.backBarButtonItem = backButton
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+            
+        }
+    }
 }
 
 //MARK: - Setting Data Source Table View
@@ -67,5 +85,6 @@ extension CategoryViewController : UITableViewDataSource {
         return 175
 
     }
+    
     
 }

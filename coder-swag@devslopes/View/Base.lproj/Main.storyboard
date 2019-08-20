@@ -40,10 +40,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="6z8-wh-tIx">
-                                                    <rect key="frame" x="0.0" y="3" width="375" height="168.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="169"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmC-Zl-oLK">
-                                                    <rect key="frame" x="151" y="77.333333333333329" width="73" height="20"/>
+                                                    <rect key="frame" x="151" y="77.666666666666671" width="73" height="20"/>
                                                     <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -80,17 +80,17 @@
                     <navigationItem key="navigationItem" title="CODER   SWAG" id="lpd-vV-yrZ"/>
                     <connections>
                         <outlet property="categoryTable" destination="zD1-FK-jsj" id="iYa-7j-eEa"/>
-                        <segue destination="Bfy-oV-9FP" kind="show" id="EgV-D1-8oZ"/>
+                        <segue destination="Bfy-oV-9FP" kind="show" identifier="productSegue" id="EgV-D1-8oZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.2" y="137.4384236453202"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="ktr-PK-tOr">
             <objects>
-                <viewController id="Bfy-oV-9FP" sceneMemberID="viewController">
+                <viewController id="Bfy-oV-9FP" customClass="ProductViewController" customModule="coder_swag_devslopes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mhd-o9-otP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +180,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WCh-aT-s6Q"/>
                     </view>
+                    <connections>
+                        <outlet property="productTable" destination="TCu-cW-nei" id="3us-a1-R9w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uul-jb-haY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
